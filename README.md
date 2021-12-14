@@ -2,7 +2,7 @@
 
 ## ADDED FUNCTION KEYS WITH MODIFIERS
 ## GIVE IT A TRY AND IF YOU FACE SOMETHING WRONG THEN ISSUE TAB IS YOURS
-
+[![asciicast](https://asciinema.org/a/JZHOQrtx3WztsUrce187qli4z.svg)](https://asciinema.org/a/JZHOQrtx3WztsUrce187qli4z)
 ## INSTALLATION
 1. Download [CircuitPython for the Raspberry Pi Pico](https://circuitpython.org/board/raspberry_pi_pico/).
 2. Plug your Raspberrypi Pico while holding the boot button and put adafruit-circuitpython-raspberry_pi_pico-en_US-7.x.x.uf2 in pico USB Drive (RPI-RP2).
