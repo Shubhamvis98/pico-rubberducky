@@ -1,0 +1,14 @@
+STRING   _____                      _____                      
+ENTER
+STRING _/ ____\____  ______ _______/ ____\______  ____   ____  
+ENTER
+STRING \   __\/  _ \/  ___//  ___/\   __\\_  __ \/  _ \ / ___\ 
+ENTER
+STRING  |  | (  <_> )___ \ \___ \  |  |   |  | \(  <_> ) /_/  >
+ENTER
+STRING  |__|  \____/____  >____  > |__|   |__|   \____/\___  / 
+ENTER
+STRING                  \/     \/                     /_____/  
+ENTER
+STRING                           RASPBERRY PI PICO RUBBERDUCKY
+ENTER
