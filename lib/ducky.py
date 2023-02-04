@@ -1,6 +1,3 @@
-# AUTHOR: SHUBHAM VISHWAKARMA
-# GITHUB/TWITTER: SHUBHAMVIS98
-
 from time import sleep
 import board
 import busio
@@ -52,7 +49,7 @@ class DUCKY:
         'RIGHT_SHIFT':Keycode.RIGHT_SHIFT, 'RIGHT_ALT':Keycode.RIGHT_ALT, 'RIGHT_GUI':Keycode.RIGHT_GUI
         }
 
-    def __init__(self, ducky):
+    def __init__(self, ducky=None):
         self.ducky = ducky
         self.LED.direction = digitalio.Direction.OUTPUT
         self.LED.value = True
@@ -101,6 +98,9 @@ class DUCKY:
             return ('NOT FOUND: '+ word)
         
     def run(self):
+        if self.ducky == None:
+            print("[!]Input file is None.\n")
+            return
         print(f'Executing {self.ducky}...')
         with open(self.ducky, 'r') as ducky:
             duck = ducky.readlines()
@@ -110,8 +110,14 @@ class DUCKY:
                 self.f_word(duck[line].split()[0], duck[line])
         self.LED.value = False
         sleep(1)
+    
+    def run_line(self, line):
+        print('Executing Line...')
+#         line = uart.readline()
+        if line:
+#             line = line.decode()
+            self.f_word(line.split()[0], line.replace('\n', ''))
 
 if __name__ == '__main__':
-    duck = DUCKY('ducky.txt')
+    duck = DUCKY()
     duck.run()
-
