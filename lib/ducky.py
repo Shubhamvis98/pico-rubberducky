@@ -1,3 +1,6 @@
+# AUTHOR: SHUBHAM VISHWAKARMA
+# GITHUB/TWITTER: SHUBHAMVIS98
+
 from time import sleep
 import board
 import busio
@@ -113,9 +116,7 @@ class DUCKY:
     
     def run_line(self, line):
         print('Executing Line...')
-#         line = uart.readline()
         if line:
-#             line = line.decode()
             self.f_word(line.split()[0], line.replace('\n', ''))
 
 if __name__ == '__main__':
