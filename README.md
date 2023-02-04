@@ -1,6 +1,6 @@
-# RASPBERRY PI PICO RUBBERDUCKY
+# RASPBERRY PI PICO RUBBERDUCKY v2
 
-### Added function keys and modifiers
+### Now you can import as module and use it withoud editing the source file
 [![asciicast](https://asciinema.org/a/JZHOQrtx3WztsUrce187qli4z.svg)](https://asciinema.org/a/JZHOQrtx3WztsUrce187qli4z)
 ### INSTALLATION
 1. Download [CircuitPython for the Raspberry Pi Pico](https://circuitpython.org/board/raspberry_pi_pico/).
