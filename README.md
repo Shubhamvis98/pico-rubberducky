@@ -1,6 +1,11 @@
 # RASPBERRY PI PICO RUBBERDUCKY v2
 
-### Now you can import as module and use it withoud editing the source file
+### Now you can import as module and use it without editing the source file.
+<pre>
+  from ducky import DUCKY
+  duck = DUCKY(filename)
+  duck.run()
+</pre>
 [![asciicast](https://asciinema.org/a/JZHOQrtx3WztsUrce187qli4z.svg)](https://asciinema.org/a/JZHOQrtx3WztsUrce187qli4z)
 ### INSTALLATION
 1. Download [CircuitPython for the Raspberry Pi Pico](https://circuitpython.org/board/raspberry_pi_pico/).
