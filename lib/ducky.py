@@ -54,7 +54,6 @@ class DUCKY:
 
     def __init__(self, ducky):
         self.ducky = ducky
-#         self.LED = digitalio.DigitalInOut(board.GP25)
         self.LED.direction = digitalio.Direction.OUTPUT
         self.LED.value = True
         self.kbd = Keyboard(usb_hid.devices)
@@ -62,7 +61,6 @@ class DUCKY:
         self.send = self.kbd.send
         self.press = self.kbd.press
         self.release = self.kbd.release
-#         self.uart = busio.UART(board.GP0, board.GP1, baudrate=115200)
 
     def caps_rst(self, toggle=0, CAPS=0):
         if not toggle:
