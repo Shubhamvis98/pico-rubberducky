@@ -1,5 +1,5 @@
 # AUTHOR: SHUBHAM VISHWAKARMA
-# GITHUB/TWITTER: SHUBHAMVIS98
+# GITHUB: SHUBHAMVIS98
 
 from time import sleep
 import board
@@ -118,6 +118,16 @@ class DUCKY:
         print('Executing Line...')
         if line:
             self.f_word(line.split()[0], line.replace('\n', ''))
+
+    def run_serial(self):
+        print('Listening...')
+        while True:
+            ser = self.uart.readline()
+            if ser:
+                try:
+                    self.run_line(ser.decode())
+                except:
+                    pass
 
 if __name__ == '__main__':
     duck = DUCKY()
