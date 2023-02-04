@@ -1,3 +1,6 @@
+# AUTHOR: SHUBHAM VISHWAKARMA
+# GITHUB/TWITTER: SHUBHAMVIS98
+
 from time import sleep
 import board
 import busio
