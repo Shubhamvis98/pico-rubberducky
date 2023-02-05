@@ -109,13 +109,16 @@ class DUCKY:
             duck = ducky.readlines()
 
         for line in range(len(duck)):
-            if duck[line]:
-                self.f_word(duck[line].split()[0], duck[line])
+            try:
+                if duck[line]:
+                    self.f_word(duck[line].split()[0], duck[line])
+            except:
+                pass
         self.LED.value = False
         sleep(1)
     
     def run_line(self, line):
-        print('Executing Line...')
+        print(f'Executing Line...\n{line}')
         if line:
             self.f_word(line.split()[0], line.replace('\n', ''))
 
@@ -130,5 +133,5 @@ class DUCKY:
                     pass
 
 if __name__ == '__main__':
-    duck = DUCKY()
+    duck = DUCKY('ducky.txt')
     duck.run()
