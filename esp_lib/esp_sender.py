@@ -15,7 +15,7 @@ class DUCKY:
     def send_line(self, line):
         self.LED.value(0)
         self.uart.write(str(line) + '\n')
-        sleep_ms(len(str(line))*15)
+        sleep_ms(len(str(line))*40)
         self.LED.value(1)
 
     def send_serial(self):
