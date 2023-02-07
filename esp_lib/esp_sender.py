@@ -27,6 +27,17 @@ class DUCKY:
             for i in file.readlines():
                 self.send_line(i)
         
+    def shell(self):
+        while True:
+            inp = input('# ')
+            try:
+                if inp.split()[0].isupper():
+                    self.send_line(f'\n{inp}')
+                else:
+                    self.send_line(f'STRING {inp}\nENTER')
+            except:
+                self.send_line(f'\nENTER')
+
 
 if __name__ == '__main__':
     duck = DUCKY('ducky.txt')
