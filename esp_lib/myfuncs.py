@@ -2,7 +2,6 @@
 # GITHUB: SHUBHAMVIS98
 
 import network
-import config
 from time import sleep
 from machine import Pin
 
