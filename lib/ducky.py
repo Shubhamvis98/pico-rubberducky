@@ -12,7 +12,11 @@ from adafruit_hid.keycode import Keycode
 
 class DUCKY:
     DEFAULT_DELAY = 200
-    LED = digitalio.DigitalInOut(board.GP25)
+    if board.board_id == 'raspberry_pi_pico_w':
+        LED = digitalio.DigitalInOut(board.LED)
+        LED.direction = digitalio.Direction.OUTPUT
+    else:
+        LED = digitalio.DigitalInOut(board.GP25)
     uart = busio.UART(board.GP0, board.GP1, baudrate=115200)
     CAPS = None
 
